@@ -53,33 +53,36 @@ while True:
             print("ENHORABUENA! HAS GANADO!!")
             break
 
-    continue
+        continue
 
 #SI FALLAMOS
-else:
-    tablero_maquina[fila,columna] = "O"
-    print("¡Agua!")
+    else:
+        tablero_maquina[fila,columna] = "O"
+        print("¡Agua!")
 
 #TURNO MAQUINA
-print("\nTurno de la máquina")
 
-while True:
+    print("\nTurno de la máquina")
 
-    resultado = recibir_disparo(tablero_jugador)
+    while True:
 
+         resultado = recibir_disparo(tablero_jugador)
+
+         if np.sum(tablero_jugador =="B")== 0:
+            break
 
 #SI LA MAQUINA FALLA PIERDE SU TURNO
-    if resultado == AGUA:
-        break
-
-
+         if resultado == AGUA:
+            break
 
  #COMPROBAMOS SI LA MAQUINA HA GANADO VIENDO SI EN NUESTRO TABLERO QUEDAN 0 "B"
 
- if np.sum(tablero_jugador == "B") == 0:
-    print("¡Gana la máquina!")
-    break
+    if np.sum(tablero_jugador == "B") == 0:
+        print("¡Gana la máquina!")
+        break
 
+
+print("\nFin de la partida")
 
 
 
