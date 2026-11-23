@@ -42,7 +42,7 @@ Se utilizará la siguiente plantilla para cada prompt que haya influido en el de
 - **Responsable:** Santiago González
 - **Objetivo:** La app fallaba
 - **Prompt utilizado:** dime si hay errores en estos códigos (se adjuntan los archivos)
-- **Respuesta relevante:** había algunos errores que se subsanaron:
+- **Respuesta relevante:** había algunos errores que se subsanaron. El módulo de creación aleatoria (comentado) lo generé con IA en la revisión. Sólo habíamos planeado la colocación fija de los barcos.
 - **Cambios realizados:** Se corrigió la sintaxis y la estructura de la clase Tablero.
     - Se incorporó un segundo array NumPy para registrar los disparos.
     - Se corrigió la devolución de resultados: tocado, agua y repetido.
