@@ -74,7 +74,7 @@ while True:
             print("¡Agua!")
             break
 
-    # TURNO DE LA MÁQUINA
+    #  COMIENZA TURNO DE LA MÁQUINA
     print("\nTurno de la máquina")
 
     while True:
